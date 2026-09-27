@@ -1,0 +1,2 @@
+"__DIR__ é uma constante do PHP que pega automaticamente o caminho da pasta onde o arquivo está. Eu usei ela pra montar o 
+caminho até a pasta modelo, garantindo que o require_once encontre as classes não importa de onde o programa seja executado."
