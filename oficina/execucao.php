@@ -1,22 +1,11 @@
 <?php
 
-/**
- * Atividade - Herança com domínio
- * Curso Técnico em Desenvolvimento de Sistemas - IFPR Foz do Iguaçu
- * Disciplina: Orientação a Objetos - Prof. Daniel Di Domenico
- *
- * Domínio: Oficina mecânica com atendimento ao cliente.
- * As classes (modelo) ficam na pasta modelo/, este arquivo executa o programa.
- */
-
 require_once __DIR__ . "/modelo/Veiculo.php";
 require_once __DIR__ . "/modelo/Carro.php";
 require_once __DIR__ . "/modelo/Moto.php";
 require_once __DIR__ . "/modelo/Caminhao.php";
 
-// -----------------------------------------------------------------
-// Veículos que já estão na oficina
-// -----------------------------------------------------------------
+
 function criarFila(): array {
     return [
         new Carro("ABC-1234", "Fiat Uno", "Troca de óleo"),
@@ -25,9 +14,7 @@ function criarFila(): array {
     ];
 }
 
-// -----------------------------------------------------------------
-// Funções auxiliares de entrada/saída
-// -----------------------------------------------------------------
+
 function lerOpcao(string $mensagem): string {
     echo $mensagem;
     return trim(fgets(STDIN));
@@ -102,9 +89,9 @@ function atenderCliente(array &$fila, float &$caixa): void {
     }
 }
 
-// -----------------------------------------------------------------
-// Menu principal
-// -----------------------------------------------------------------
+
+
+
 function menuPrincipal(): void {
     $fila = criarFila();
     $caixa = 0.0;
@@ -140,5 +127,5 @@ function menuPrincipal(): void {
     }
 }
 
-// Início do programa
+
 menuPrincipal();

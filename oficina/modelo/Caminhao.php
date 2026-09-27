@@ -2,9 +2,7 @@
 
 require_once __DIR__ . "/Veiculo.php";
 
-/**
- * Subclasse Caminhao - herda de Veiculo
- */
+
 class Caminhao extends Veiculo {
     private float $taxaBaseServico = 150.00;
 

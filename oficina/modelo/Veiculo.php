@@ -1,9 +1,4 @@
 <?php
-
-/**
- * Superclasse Veiculo
- * Atividade - Herança com domínio (Orientação a Objetos - IFPR)
- */
 abstract class Veiculo {
     protected string $placa;
     protected string $modelo;
@@ -27,10 +22,10 @@ abstract class Veiculo {
         return $this->problema;
     }
 
-    // Cada subclasse calcula o valor do serviço à sua maneira
+  
     abstract public function calcularOrcamento(): float;
 
-    // Cada subclasse descreve seu tipo de veículo
+    
     abstract public function tipoVeiculo(): string;
 
     public function descricao(): string {
